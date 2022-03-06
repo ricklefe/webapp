@@ -27,7 +27,7 @@ jobs:
           uses: docker/login-action@v1
           with:
             username: felkcir
-            password: 4b17edac-de8e-4f98-bf72-2ee6cc7af4c2
+            password: ${{ secrets.DOCKER_TOKEN }}
         -
           name: Build and push
           uses: docker/build-push-action@v2
