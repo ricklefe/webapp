@@ -4,3 +4,4 @@ WORKDIR /app
 RUN pip install -r requirements.txt
 COPY . /app
 ENV PORT=5000
+CMD [ "app.py" ]
